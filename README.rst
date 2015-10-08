@@ -47,16 +47,16 @@ probe is a liability for you, please be aware of this risk.
 OONI in 5 minutes
 =================
 
-On debian testing or unstable::
+On debian::
 
     sudo apt-get install ooniprobe
 
-If you are running debian stable you can get it from backports via::
+If you are running debian "oldstable" (Debian 7.x "wheezy") you can get it from backports via::
 
-    sudo sh -c 'echo "deb http://http.debian.net/debian wheezy-backports main" >> /etc/apt/sources.list'
+    echo "deb http://http.debian.net/debian wheezy-backports main" | sudo tee /etc/apt/sources.list.d/ooni.list > /dev/null
     sudo apt-get update && sudo apt-get install ooniprobe
 
-On unix systems::
+On other unix systems::
 
     sudo pip install ooniprobe
 
